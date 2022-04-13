@@ -1,0 +1,15 @@
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(212,45,253,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.i-1{
+    height: 50px;
+}
+.btn{
+    height: 50px;
+}
