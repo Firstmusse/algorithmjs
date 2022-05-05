@@ -1,0 +1,35 @@
+.container{
+    width: auto;
+    background-color: bisque;
+    height: 550px;
+    display: flex;
+}
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-new{
+    width: 100px;
+    height: 50px;
+}
+.btn-sort{
+    width: 100px;
+    height: 50px;
+}
+.btn-refresh{
+    width: 100px;
+    height: 50px;
+}
+.btn-cube{
+    width: 30%;
+    height: 50px;
+    margin: 3px;
+}
+.cube-1{
+    width: 50%;
+    height: auto;
+}
+.cube-2{
+    width: 50%;
+}
