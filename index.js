@@ -6,10 +6,7 @@ fetch('https://restcountries.com/v2/all')
     return response.json();
   })
   .then((data) => {
-    for (let item of data) {
-       arr.push(item)  
-    }
-    
+    arr = data
     // console.log(arr);
         
     let result = ''
