@@ -9,18 +9,25 @@
 </head>
 <body>
     
-    <table  class="table_dark" id="news" border="1">
-        <tr>
-         <th>Код</th>
-         <th>Название</th>
-         <th>Столица</th>
-         <th>Валюта</th>
-         <th>Флаг</th>
-         <th>Популяция</th>
-         <th>Границы</th>
-         <th>Часовой пояс</th>
-         
-        </tr>
+    <input type="text" id="txtWord"  placeholder="Search..." >
+    <!-- <button class="btn btn-success" type="button" id="buttonSearch".">Поиск</button> -->
+
+    <table  class="table_dark"  border="1">
+        <thead>
+            <tr>
+                <th>Код</th>
+                <th>Название</th>
+                <th>Столица</th>
+                <th>Валюта</th>
+                <th>Флаг</th>
+                <th>Популяция</th>
+                <th>Границы</th>
+                <th>Часовой пояс</th>
+               </tr>
+        </thead>
+        <tbody id="news">
+            
+        </tbody>
     </table>
 
     <script src="/index.js"></script>
