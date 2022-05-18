@@ -49,7 +49,7 @@ function renderItems(items) {
 
 function matchSearch(item, query) {
   return item.name.toLowerCase().includes(query.toLowerCase()) || item.capital?.toLowerCase().includes(query.toLowerCase()) || 
-  item.alpha2Code.includes(query) || item.population === Number(query)  ||
+  item.alpha2Code.includes(query) || item.population <= Number(query)  ||
   item.timezones.includes(query) || Object.values(item.currencies?.[0]||{}).includes(query)
   || item.borders?.includes(query)
 }
@@ -61,7 +61,7 @@ fetch("https://restcountries.com/v2/all")
   .then((data) => {
     arr = data;
     oninput = function () {
-      document.getElementById("txtWord").innerText = inpu.value;     
+      document.getElementById("txtWord").innerText = inpu.value;  
       renderItems(arr)
     };
     renderItems(arr)
